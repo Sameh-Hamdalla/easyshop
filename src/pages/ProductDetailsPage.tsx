@@ -1,0 +1,1 @@
+// Hier kommt der Benutzer auf die Detailseite eines Produkts.

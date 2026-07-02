@@ -1,0 +1,1 @@
+// Hier würde der Benutzer den Checkout-Prozess durchlaufen, um seine Bestellung abzuschließen.

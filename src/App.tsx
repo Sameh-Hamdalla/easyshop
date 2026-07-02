@@ -1,9 +1,23 @@
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import NavBar from "./components/NavBar";
+
+import HomePage from "./pages/HomePage";
+import ProductsPage from "./pages/ProductsPage";
 
 function App() {
   return (
-    <h1>EasyShop</h1>
-    );
+    <BrowserRouter>
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-export default App
+
+export default App;

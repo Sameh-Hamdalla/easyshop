@@ -1,0 +1,1 @@
+// Hier landen die Produkte, die der Benutzer in den Warenkorb gelegt hat.
