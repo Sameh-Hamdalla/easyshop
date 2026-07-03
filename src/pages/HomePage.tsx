@@ -1,5 +1,5 @@
 // Startseite, Sprint 1a
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/home/HeroSection";
 
 function HomePage() {
   return (
