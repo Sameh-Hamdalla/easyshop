@@ -11,15 +11,15 @@ function NavBar() {
 
           <ul className="navbar__menu">
             <li>
-              <Link to="/">Startseite</Link>
+              <Link className="navbar__link"  to="/">Startseite</Link>
             </li>
 
             <li>
-              <Link to="/products">Produkte</Link>
+              <Link className="navbar__link" to="/products">Produkte</Link>
             </li>
 
             <li>
-              <Link to="/cart">Warenkorb</Link>
+              <Link className="navbar__link" to="/cart">Warenkorb</Link>
             </li>
           </ul>
         </nav>

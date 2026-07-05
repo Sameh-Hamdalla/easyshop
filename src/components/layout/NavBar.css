@@ -7,6 +7,36 @@
 
 .navbar__menu {
   display: flex;
-  gap: 24px;
+  gap: 32px;
   list-style: none;
+}
+
+.navbar__logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+.navbar__logo:hover {
+  color: #8b6b4a;
+}
+
+.navbar__menu a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar__menu a:hover {
+  color: #8b6b4a;
+}
+.navbar__link{
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar__link:hover {
+    color: #8b6b4a;
 }
