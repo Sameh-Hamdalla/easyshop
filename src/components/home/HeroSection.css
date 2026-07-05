@@ -1,0 +1,41 @@
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  
+  /* Innenabstand:
+   0 = oben/unten
+   10% = links/rechts */
+padding: 0 10%;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+  align-items: flex-start;
+}
+.hero__label{
+
+    font-size: 0.9rem;
+    /* 1rem = 16px */
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.hero__button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #1f1f1f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  /* sorgt für einen leichten oder weichen Übergang */
+}
+
+.hero__button:hover {
+  background-color: #8b6b4a;
+}

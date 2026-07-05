@@ -1,16 +1,28 @@
 
 import {Link} from "react-router-dom";
+import "./NavBar.css";
 
 function NavBar() {
   return (
-    <nav>
-        <h2>EasyShop</h2>
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/products">Products</Link></li>
-            {/* <li><Link to="/cart">Cart</Link></li> */}
-        </ul>
-    </nav>
+        <nav className="navbar">
+          <Link to= "/" className="navbar__logo">
+            EasyShop Hotel
+          </Link>
+
+          <ul className="navbar__menu">
+            <li>
+              <Link to="/">Startseite</Link>
+            </li>
+
+            <li>
+              <Link to="/products">Produkte</Link>
+            </li>
+
+            <li>
+              <Link to="/cart">Warenkorb</Link>
+            </li>
+          </ul>
+        </nav>
   );
 }
 
