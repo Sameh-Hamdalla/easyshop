@@ -1,41 +1,100 @@
+/* ======================================================
+   HERO SECTION
+   Begrüßungsbereich auf der Startseite
+====================================================== */
+
 .hero {
+  /* Flexbox aktiviert */
   display: flex;
+
+  /* Inhalt vertikal zentrieren */
   align-items: center;
+
+  /* Mindesthöhe des Hero-Bereichs */
   min-height: 70vh;
-  
-  /* Innenabstand:
-   0 = oben/unten
-   10% = links/rechts */
-padding: 0 10%;
+
+  /* Innenabstand
+     0px = oben/unten
+     10% = links/rechts */
+  padding: 0 10%;
+
+  /* Hintergrundfarbe */
+  background-color: #ffffff;
 }
 
+/* Textbereich */
 .hero__content {
   display: flex;
+
+  /* Elemente untereinander anordnen */
   flex-direction: column;
+
+  /* Abstand zwischen allen Elementen */
   gap: 24px;
+
+  /* Maximale Breite */
   max-width: 600px;
+
+  /* Elemente links ausrichten */
   align-items: flex-start;
 }
-.hero__label{
 
-    font-size: 0.9rem;
-    /* 1rem = 16px */
-    font-weight: 700;
-    text-transform: uppercase;
+/* Kleiner Text oberhalb der Überschrift */
+.hero__label {
+  font-size: 0.9rem;
 
+  /* 1rem = 16px */
+  font-weight: 700;
+
+  color: #8b6b4a;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
 }
+
+/* Hauptüberschrift */
+.hero__title {
+  font-size: 3.2rem;
+
+  font-weight: 700;
+
+  color: #1f1f1f;
+
+  line-height: 1.2;
+}
+
+/* Beschreibung */
+.hero__text {
+  font-size: 1.1rem;
+
+  color: #666666;
+
+  line-height: 1.7;
+
+  max-width: 550px;
+}
+
+/* Button */
 .hero__button {
   display: inline-block;
+
   padding: 14px 28px;
+
   background-color: #1f1f1f;
+
   color: white;
+
   text-decoration: none;
+
   border-radius: 8px;
+
   font-weight: 600;
+
   transition: background-color 0.3s ease;
-  /* sorgt für einen leichten oder weichen Übergang */
 }
 
+/* Hover-Effekt */
 .hero__button:hover {
   background-color: #8b6b4a;
 }
