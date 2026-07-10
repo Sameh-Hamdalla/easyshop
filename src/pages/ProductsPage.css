@@ -1,0 +1,24 @@
+.products-page {
+  /* Innenabstand:
+     60px oben/unten
+     10% links/rechts */
+  padding: 60px 10%;
+}
+
+.products-page__title {
+  /* Abstand unter der Überschrift */
+  margin-bottom: 32px;
+}
+
+.products-page__grid {
+  /* Aktiviert ein Raster für die Produktkarten */
+  display: grid;
+
+  /* Erstellt automatisch passende Spalten:
+     Jede Karte ist mindestens 280px breit
+     und darf freien Platz einnehmen */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  /* Abstand zwischen den Karten */
+  gap: 24px;
+}
