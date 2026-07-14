@@ -70,5 +70,21 @@ export const products: ProductModel[] = [
     price: 10,
     imageUrl: "/images/swimming-shoes.png",
     category: "Gutschein",
+  },
+  {
+    id: 9,
+    name: "Badehandtuch",
+    description: "Ein weiches Badehandtuch für Ihre Entspannung.",  
+    price: 20,
+    imageUrl: "/images/bath-towel.png",
+    category: "Gutschein",
+  },
+  {
+    id: 10,
+    name: "Badeente",
+    description: "Eine niedliche Badeente für Ihre Badespaß.",
+    price: 8,
+    imageUrl: "/images/bath-duck.png",
+    category: "Gutschein",
   }
 ];

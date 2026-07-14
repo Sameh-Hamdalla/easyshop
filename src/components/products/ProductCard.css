@@ -1,11 +1,12 @@
 .product-card {
   border: 1px solid #ddd;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
   background-color: white;
 
   /* Verhindert eine unnötig breite Einzelkarte */
   max-width: 380px;
+   box-shadow: 0 10px 25px rgba(0,0,0,.08);
 }
 
 .product-card__image {
@@ -53,6 +54,8 @@
   font-weight: 600;
   cursor: pointer;
 }
-.product-card__button:hover {
-  background-color: #333;
+.product-card:hover{
+    transform: translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
 }

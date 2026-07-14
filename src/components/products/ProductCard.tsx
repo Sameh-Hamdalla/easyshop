@@ -1,5 +1,6 @@
 import type { ProductModel } from "../../types/ProductModel";
 import "./ProductCard.css";
+import { Link } from "react-router-dom";
 
 // Props beschreiben, welche Daten diese Komponente von außen erhält.
 type ProductCardProps = {
@@ -33,8 +34,14 @@ function ProductCard({ product }: ProductCardProps) {
         {/* Produktpreis */}
         <p className="product-card__price">{product.price} €</p>
 
-        {/* Button kommt später */}
-        <button className="product-card__button">In den Warenkorb</button>
+        <Link
+          to={`/products/${product.id}`}
+          // Der Pfad zur Produktseite, mit dem ID des Produkts, damit wir die richtige Produktseite aufrufen können.
+          // mit dem Backticks sagt JS, in diesem Text dürfen wir Variablen einfügen, die in ${} stehen.
+          className="product-card__button"
+        >
+          Details ansehen
+        </Link>
       </div>
     </article>
   );

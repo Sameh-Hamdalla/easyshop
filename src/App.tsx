@@ -1,5 +1,4 @@
-
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/layout/NavBar";
 
@@ -14,7 +13,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
+        {/* <Route path="/products" element={<ProductsPage />} /> */}
+        <Route path="/products/:id" element={<ProductsPage />} />
+        {/* : Doppelpunkt bedeutet , hier kommt später irgendein Wert, also ist ein Platzhalter */}
         {/* <Route path="/cart" element={<NotFoundPage />} /> */}
       </Routes>
     </BrowserRouter>

@@ -1,4 +1,4 @@
-// holt alle Produkte aus der Datenbank und zeigt sie auf der Seite an
+// holt alle Produkte  und zeigt sie auf der Seite an
 
 import { products } from "../data/products";
 import ProductCard from "../components/products/ProductCard";
